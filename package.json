@@ -1,0 +1,53 @@
+{
+    "name": "my-react-app",
+    "version": "1.0.0",
+    "description": "A simple React application with Webpack, Sass, and Babel support",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --open",
+        "build": "webpack --mode production"
+        
+    },
+    "jest": {
+        "testEnvironment": "jsdom",
+        "moduleNameMapper": {
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+        },
+        "setupFilesAfterEnv": [
+            "@testing-library/jest-dom/extend-expect"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 80,
+                "functions": 80,
+                "lines": 80,
+                "statements": 80
+            }
+        }
+    },
+    "author": "Raman Kumar",
+    "license": "MIT",
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.8",
+        "@babel/preset-react": "^7.14.5",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.0.0",
+        "babel-jest": "^27.0.6",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.5.0",
+        "html-webpack-plugin": "^5.5.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^27.0.6",
+        "node-sass": "^7.0.1",
+        "sass-loader": "^12.4.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.58.2",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.5.0"
+    }
+}

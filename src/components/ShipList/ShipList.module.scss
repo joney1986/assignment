@@ -1,0 +1,86 @@
+$color_1: #FFF;
+$color_2: #ffffff;
+$background-color_1: #212121;
+$background-color_2: #000;
+$background-color_3: #ef1c1c;
+$border-color_1: #EF5350;
+
+@-webkit-keyframes load1 {
+	0%,80%,100% {
+		box-shadow: 0 0;
+		height: 4em;
+	}
+	40% {
+		box-shadow: 0 -2em;
+		height: 5em;
+	}
+}
+@keyframes load1 {
+	0%,80%,100% {
+		box-shadow: 0 0;
+		height: 4em;
+	}
+	40% {
+		box-shadow: 0 -2em;
+		height: 5em;
+	}
+}
+.shipList {
+	background-color: $background-color_1;
+	padding: 15px;
+}
+body {
+	background-color: $background-color_2;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.error {
+	padding: .7143rem 1.071rem;
+	margin-bottom: 1.429rem;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	color: $color_1;
+	background-color: $background-color_3;
+	border-color: $border-color_1;
+}
+.loader {
+	background: #ffffff;
+	-webkit-animation: load1 1s infinite ease-in-out;
+	animation: load1 1s infinite ease-in-out;
+	width: 1em;
+	height: 4em;
+	color: $color_2;
+	text-indent: -9999em;
+	margin: 88px auto;
+	position: relative;
+	font-size: 11px;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+	&:before {
+		background: #ffffff;
+		-webkit-animation: load1 1s infinite ease-in-out;
+		animation: load1 1s infinite ease-in-out;
+		width: 1em;
+		height: 4em;
+		position: absolute;
+		top: 0;
+		content: '';
+		left: -1.5em;
+		-webkit-animation-delay: -0.32s;
+		animation-delay: -0.32s;
+	}
+	&:after {
+		background: #ffffff;
+		-webkit-animation: load1 1s infinite ease-in-out;
+		animation: load1 1s infinite ease-in-out;
+		width: 1em;
+		height: 4em;
+		position: absolute;
+		top: 0;
+		content: '';
+		left: 1.5em;
+	}
+}

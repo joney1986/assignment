@@ -1,0 +1,26 @@
+$color_1: white;
+$font-family_1: inherit;
+
+.card {
+	background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+	border: none;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	font-family: $font-family_1;
+	h2 {
+		font-weight: 600;
+		color: $color_1;
+		text-align: center;
+		display: block;
+		padding-top: 10px;
+		font-size: 1.3em;
+	}
+	p {
+		font-weight: 400;
+		color: $color_1;
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		font-size: 1em;
+	}
+}
