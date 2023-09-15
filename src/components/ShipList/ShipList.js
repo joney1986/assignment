@@ -41,11 +41,6 @@
 //     );
 // }
 
-// export default ShipList;
-
-
-// ShipList.js
-
 import React, { useState, useEffect } from 'react';
 import ShipCard from '../ShipCard/ShipCard';
 import { fetchStarships } from '../../services/api';
