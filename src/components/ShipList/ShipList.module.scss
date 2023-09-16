@@ -44,7 +44,7 @@ body {
 	border-color: $border-color_1;
 }
 .loader {
-	background: #ffffff;
+	background: #000;
 	-webkit-animation: load1 1s infinite ease-in-out;
 	animation: load1 1s infinite ease-in-out;
 	width: 1em;
@@ -60,7 +60,7 @@ body {
 	-webkit-animation-delay: -0.16s;
 	animation-delay: -0.16s;
 	&:before {
-		background: #ffffff;
+		background: #000;
 		-webkit-animation: load1 1s infinite ease-in-out;
 		animation: load1 1s infinite ease-in-out;
 		width: 1em;
@@ -73,7 +73,7 @@ body {
 		animation-delay: -0.32s;
 	}
 	&:after {
-		background: #ffffff;
+		background: #000;
 		-webkit-animation: load1 1s infinite ease-in-out;
 		animation: load1 1s infinite ease-in-out;
 		width: 1em;
