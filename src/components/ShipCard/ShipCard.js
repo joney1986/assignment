@@ -26,8 +26,7 @@ function ShipCard({ ship, isMostFilms }) {
         <div className={styles.cardImage}>
           {image && (
             <img
-              width="250"
-              key={image.id}
+             key={image.id}
               src={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`}
               alt={image.title}
             />
