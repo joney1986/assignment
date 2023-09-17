@@ -27,4 +27,4 @@ jobs:
     - name: Deploy
       run: |
         npm install -g surge
-        surge --project ./dist --domain saronight.surge.sh/
+        surge --project ./dist --domain caciassignement.surge.sh/
